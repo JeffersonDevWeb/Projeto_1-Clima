@@ -13,7 +13,7 @@
     flex-direction: column;
     align-content: center;
 
-    background-color: rgb(111, 111, 167);
+    background-color: rgb(39, 39, 105);
 }
 
 /*Aba Principal*/
@@ -50,7 +50,6 @@ main {
 .description {
     color: aliceblue;
     font-size: 30px;
-    margin-top: 20%;
 }
 
 .temp {
@@ -117,3 +116,40 @@ main {
     left: 750px;
 }
 
+/* responsividade */
+
+@media screen and (max-width: 700px)  {
+    #wrapper {
+        justify-content: center;
+    }
+
+    main {
+        width: 90%;
+        margin-top: 0;
+    }
+
+    .city {
+        font-size: 20px;
+        position: absolute;
+    }
+
+    .dados {
+        margin-top: 30px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .main {
+        margin-top: 3px;
+        font-size: 12px;
+    }
+
+    .wind {
+        margin-top: 3px;
+        margin-left: 3%;
+        font-size: 12px;
+        align-self: flex-start;
+    }
+}
