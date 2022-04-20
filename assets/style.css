@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+    align-content: center;
+
+    background-color: rgb(111, 111, 167);
+}
+
+/*Aba Principal*/
+
+main {
+    background: url('img/sky.jpg') top;
+    background-size: fill;
+    width: 60%;
+    height: 200px;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.dados {
+    margin-left: 3%;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100px;
+    max-height: 89%;
+}
+
+.city {
+    color: rgb(165, 175, 214);
+    font-size: 50px;
+    align-self: center;
+}
+
+.description {
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 20%;
+}
+
+.temp {
+    color: aliceblue;
+    font-size: 50px;
+    max-width: fit-content;
+    margin-bottom: -10px;
+}
+
+.feels-like {
+    margin-left: -105%;
+    margin-top: 115%;
+    color: aliceblue;
+    width: max-content;
+    margin-bottom: -10px;
+}
+
+.icon {
+    align-self: flex-end;
+}
+
+/* Detalhes */
+
+.detalhes {
+    background-color: rgb(89, 155, 212);
+    border-radius: 20px;
+    height: 25%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.title_details {
+    margin-left: 3%;
+    font-weight: 600;
+    color: aliceblue;
+    font-size: 20px;
+    max-width: fit-content;
+    margin-top: 25px;
+}
+
+.main {
+    margin-top: 25px;
+}
+
+.first {
+    margin-top: 0;
+}
+
+.wind {
+    align-self: flex-end;
+    margin-left: -20%;
+}
+
+.detalhes::after{
+    content: '';
+    position: absolute;
+    background-color: rgb(46, 107, 159);
+    width: 3px;
+    height: 20%;
+    left: 750px;
+}
+
